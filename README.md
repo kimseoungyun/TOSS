@@ -1,11 +1,13 @@
 # 💳 2025 TOSS NEXT ML CHALLENGE: CTR Prediction
 
-> **제4회 토스 NEXT 개발자 챌린지 - 광고 클릭 예측(CTR) 모델 개발** \> Transformer 기반의 Hybrid Tabular Model을 활용한 광고 클릭률 예측 솔루션입니다.
+> **제4회 토스 NEXT 개발자 챌린지 - 광고 클릭 예측(CTR) 모델 개발**
+> 대회 마감 1주일을 앞두고 시작하여, Transformer 기반의 Hybrid Tabular Model을 빠르게 구축하고 최적화한 솔루션입니다.
 
 ## 📌 Competition Overview
 
   * **대회명:** 토스 NEXT ML CHALLENGE : 광고 클릭 예측(CTR) 모델 개발
   * **주최/주관:** Viva Republica (Toss) / DACON
+  * **수행 기간:** 2025.10.07 ~ 2025.10.13 (대회 마감 1주 전 참여)
   * **링크:** [DACON Competition Page](https://dacon.io/competitions/official/236575/overview/description)
   * **목표:** 유저의 행동 로그와 광고 속성 데이터를 기반으로 광고 클릭 여부(`clicked`)를 예측하는 이진 분류(Binary Classification) 모델 개발.
 
@@ -96,6 +98,14 @@ class TransformerTabularModel(nn.Module):
       * 노트북 내에는 데이터 로드, 전처리(결측치 처리, 인코딩), 모델 학습, 추론 과정이 포함되어 있습니다.
 
 -----
+
+## 💭 Project Retrospective
+
+### ⏱️ Time Constraint & Fast Adaptation
+대회 마감 1주일을 앞두고 참여하게 되어 시간적 제약이 컸습니다. 하지만 짧은 시간 내에 **정형 데이터(Tabular)와 시퀀스 데이터(Sequence)를 결합하는 하이브리드(Hybrid) 아키텍처**를 처음으로 시도하고 구현까지 완료했습니다.
+
+기존에는 단일 유형의 데이터 처리에 익숙했으나, 이번 프로젝트를 통해 서로 다른 성격의 데이터를 **Transformer 기반으로 융합(Fusion)**하는 기술을 빠르게 습득하여 적용했습니다. 결과적으로 베이스라인 대비 유의미한 성능 향상을 이끌어내며, 새로운 도메인과 아키텍처에 대한 적응력을 길렀습니다.
+
 
 ### 📈 Future Works
 
